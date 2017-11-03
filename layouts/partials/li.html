@@ -1,12 +1,7 @@
-
+<div class="col-md-12 text-center content">
+  <h4 class="description">{{ .Content }}</h4>
+</div>
 <section id="list-pane" class="row list">
-  {{ if eq .Type "blog_list" }}
-  <section id="content-pane" class="row">
-    <div class="col-md-12 text-center content">
-      <h4 class="description">{{ .Content }}</h4>
-    </div>
-  </section>
-  {{ end }}
   <ul >
     {{ range .Data.Pages.ByPublishDate }}
     <li class="list-entry">
